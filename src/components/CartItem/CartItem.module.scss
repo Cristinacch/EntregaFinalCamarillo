@@ -1,0 +1,27 @@
+$breakpoint-medium: 768px;
+
+.cartItem {
+    margin: 1rem;
+    .image {
+        width: 100%;
+    }
+    .details {
+        text-align: center;
+        border-top: 1px solid gray;
+        background: whitesmoke;
+        padding: 1.5rem;
+
+    }
+     @media screen and (min-width: $breakpoint-medium) {
+        display: flex;
+        flex-direction: row;
+        .image {
+            width: 20%;
+        }
+        .details {
+            width: 80%;
+            border-left: 1px solid gray;
+        }
+    }
+}
+
